@@ -1,3 +1,6 @@
+import React from 'react';
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 flex flex-col items-center justify-center p-8">
@@ -26,12 +29,11 @@ export default function Home() {
                 We offer the latest technology products with premium quality and 
                 competitive prices. Start browsing our collection to find your perfect match.
               </p>
-              <a 
-                href="/products" 
-                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all hover:from-blue-700 hover:to-indigo-700"
-              >
-                Browse Products
-              </a>
+              <Link href="/products">
+                <div className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all hover:from-blue-700 hover:to-indigo-700 cursor-pointer">
+                  Browse Products
+                </div>
+              </Link>
             </div>
           </div>
 
